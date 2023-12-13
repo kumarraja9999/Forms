@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login in page</title>
+    <link rel="stylesheet" href="/main.css">
+<body>
+    <header></header>
+    <main>
+        <form action="https://httpbin.org/get " method="get">
+            <fieldset  class="personal">
+                <legend>Personal details</legend>
+                <p>
+                <label for="firstname">First Name</label> 
+                <input 
+                        type="text"
+                        id=" firstname"
+                        name="firstname"
+                        placeholder="Siripurapu"
+                        autofocus
+                        required
+                        autocomplete="on">
+                
+        
+                </p>
+                <p>
+                <label for="lastname">last Name</label> 
+                <input 
+                        type="text"
+                        id=" lastname"
+                        name="lasttname"
+                        placeholder="raja"
+                        autofocus
+                        required
+                        autocomplete="on">
+                
+        
+                </p>
+                <p>
+                <label for="password">last Name</label> 
+                <input 
+                        type="text"
+                        id=" password"
+                        name="password"
+                        placeholder="confidential"
+                        autofocus
+                        required
+                        autocomplete="on">
+                        <p>
+                            <label for="phone">mobile number</label>
+                            <input type="tel"
+                            name="phone"
+                            id="tel"
+                            placeholder="+91-9542141958"
+                            pattern="[+91] [6-9]{1}-[0-9]{9}"
+                            required
+                       />
+                        </p>
+                        <p>
+                            <label for="decade">Favourite decade</label>
+                            <input type="number"
+                            name="decade"
+                            id="decade"
+                            min="1989"
+                            max="2022"
+                            step="9"
+                            value="1989">
+                        </p>
+                        <p>
+                            <label for="color">favourite color</label>
+                            <select name=" color" id="color">
+                            <optgroup label="primary colors">
+                                <option value="">Red</option>
+                                <option value="">Yellow</option>
+                                <option value="">Blue</option>
+                            </optgroup>
+                            <optgroup label="secondary colors">
+                                <option value="">voilet red</option>
+                                <option value="">orange red</option>
+                                <option value=""> yellow blue</option>
+                            </optgroup>
+                             </select>
+                        </p>
+                        
+                
+        
+                </p>
+            </fieldset>
+            <br>
+            <fieldset class="food">
+                <legend>Favourite food </legend>
+                <p>
+                    <input type="radio" name="food" type="pulka" id="pulka" value="pulka">
+                    <label for="">pulka</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" type="panner" id="panner" value="panner">
+                    <label for="">panner</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" type="kaju curry" id="kaju curry" value="kaju curry">
+                    <label for="">kaju curry</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" type="dal fry" id="dal fry" value="dal fry" >
+                    <label for="">dal fry</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" type="egg fry" id="egg fry" value="egg fry">
+                    <label for="">egg fry</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset class="engines">
+                <legend>Types of engines</legend>
+                <p>
+                    <input type="checkbox" name="engines" id="Bs3" value="Bs3">
+                    <label for="">Bs3</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="engines" id="Bs4" value="Bs4">
+                    <label for="">Bs4</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="engines"  id="Bs6" value="Bs6">
+                    <label for="">Bs6</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset  class="Summary">
+                <legend>Summary on engines</legend>
+                <label for="">Summary on engines</label>
+                <br>
+                <br>
+                <textarea name="Message" id="message" cols="100" rows="15" placeholder="Type message here" style="background-color: black; color: white;"></textarea>
+            </fieldset>
+            <br>
+            <br>
+            <button type="submit"> submit </button>
+            <button type="reset">Reset </button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
